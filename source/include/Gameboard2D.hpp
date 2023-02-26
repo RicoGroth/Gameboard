@@ -5,12 +5,12 @@
 #include <vector>
 
 template <typename Cell_t>
-class GameBoard2D
+class Gameboard2D
 {
 private:
    std::vector<Cell_t> m_cells; 
 public:
-    GameBoard2D(std::initializer_list<Cell_t> initial_cells)
+    Gameboard2D(std::initializer_list<Cell_t> initial_cells)
     : m_cells{}
     {
         for(const auto& cell : initial_cells)

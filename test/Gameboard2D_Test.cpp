@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "GameBoard2D.hpp"
+#include "Gameboard2D.hpp"
 
 TEST(Suite1, shouldSucceed)
 {
@@ -13,7 +13,7 @@ TEST(Suite1, shouldFail)
 
 TEST(BoardTests, constructorPopulatesVector)
 {
-    GameBoard2D<int> actual{1, 2, 3, 4, 5};
+    Gameboard2D<int> actual{1, 2, 3, 4, 5};
     std::vector<int> expected{1, 2, 3, 4, 5};
     for(std::size_t i{0}; i < expected.size(); ++i)
     {

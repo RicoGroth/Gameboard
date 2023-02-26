@@ -7,13 +7,13 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(googletest)
 add_library(GTest::GTest INTERFACE IMPORTED)
 target_link_libraries(GTest::GTest INTERFACE gtest_main)
-set(TEST_NAME GameBoard_Test)
+set(TEST_NAME Gameboard_Test)
 add_executable(${TEST_NAME}
-    GameBoard2D_Test.cpp
+    Gameboard2D_Test.cpp
 )
 
 target_link_libraries(${TEST_NAME}
     PRIVATE GTest::GTest
-    PRIVATE GameBoard2D
+    PRIVATE Gameboard2D
 )
- add_test(GameBoard_GTest ${TEST_NAME})
+ add_test(Gameboard_GTest ${TEST_NAME})
